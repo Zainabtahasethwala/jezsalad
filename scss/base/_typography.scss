@@ -1,0 +1,45 @@
+//font-family included from font.css
+@import "../utilites/variables.scss";
+@import "../utilites/mixins.scss";
+@import "mixinforP.scss";
+h1 {
+  @include font-size($h1-font-sizes);
+  letter-spacing: 0.32px;
+  color: map-get($colors, grey-text);
+  @include gap(bottom, 30, margin);
+  @include gap(top, 30, margin);
+  span {
+    color: map-get($colors, orange-color);
+  }
+  @media (max-width: $xl) {
+    letter-spacing: 2px;
+  }
+}
+p {
+  @include font-size($p-font-size); //mixinsforP for responsive
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: map-get($colors, mute-text);
+  margin-bottom: 0;
+}
+h3 {
+  font-size: 48px;
+  line-height: 67px;
+  color: map-get($colors, grey-text);
+  margin-bottom: 30px;
+  span {
+    color: map-get($colors, orange-color);
+  }
+}
+h4{
+  font-size: 24px;
+  line-height: 43px;
+  color: map-get($colors, black-color);
+  margin-bottom: 12px;
+}
+h5{
+  color: map-get($colors, orange-color);
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 12px;
+}

@@ -1,0 +1,44 @@
+.cards_row .cards:nth-child(2) {
+  box-shadow: 0 5px 16px rgba(245, 222, 179, 0.6);
+  border: none; }
+  .cards_row .cards:nth-child(2) button {
+    background: #FB9300;
+    border-radius: 100px;
+    color: #fff;
+    padding: 20px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    font-weight: 400; }
+    @media (min-width: 1199px) {
+      .cards_row .cards:nth-child(2) button:hover {
+        border: 1px solid #FB9300;
+        background: #fff;
+        color: #FB9300; }
+        .cards_row .cards:nth-child(2) button:hover svg path {
+          stroke: #FB9300; } }
+    @media (max-width: 1199px) {
+      .cards_row .cards:nth-child(2) button {
+        padding: 15px 24px; } }
+    @media (max-width: 991px) {
+      .cards_row .cards:nth-child(2) button {
+        padding: 12px 22px;
+        margin: 0 12px; } }
+    @media (max-width: 767px) {
+      .cards_row .cards:nth-child(2) button {
+        padding: 9px 18px;
+        margin: 0 10px; } }
+    @media (max-width: 540px) {
+      .cards_row .cards:nth-child(2) button {
+        padding: 9px 15px;
+        margin: 0px 5px; } }
+    .cards_row .cards:nth-child(2) button svg {
+      padding-left: 14px;
+      width: auto; }
+      .cards_row .cards:nth-child(2) button svg path {
+        stroke: #fff; }

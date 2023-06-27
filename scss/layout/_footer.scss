@@ -1,0 +1,82 @@
+@import "../utilites/variables.scss";
+@import "../utilites/mixins.scss";
+footer{
+    padding: 50px 0;
+    .col-3{
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer-head{
+        @include logo;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        flex-direction: column;
+        p{
+            font-size: 16px;
+            line-height: 25px;
+            font-weight: 400;
+            padding-top: 19px;
+        }
+        .copyright{
+            @include font-16;
+            color: map-get($colors,black-color );
+        }
+    }
+    h6{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        color: map-get($colors, orange-color );
+        margin-bottom: 24px;
+    }
+    .center-list{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-list{
+        @include ul-li-css;
+        ul{
+            margin-bottom: 0;
+            li{
+                padding: 0;
+                a{
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    display: flex;
+                    margin-bottom: 24px;
+                }
+                &:hover{
+                    svg{
+                        path{
+                            fill: map-get($colors, grey-text );
+                        }
+                    }
+                }
+                span{
+                    color: map-get($colors, grey-text );
+                    margin-left: 16px;
+                    font-weight: 400;
+                    &:hover{
+                        color: map-get($colors, orange-color);
+                    }
+                }
+            }
+        }
+        ul.pr-15{
+            li{
+                padding: 0 15px;
+            }
+            a{
+                margin-bottom: 0;
+            }
+        }
+        .follow-us{
+            @include font-16;
+            color: map-get($colors,grey-text);
+            padding-top: 20px;
+        }
+    }
+}

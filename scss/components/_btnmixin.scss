@@ -1,0 +1,70 @@
+@import"../utilites/variables.scss";
+
+@mixin common-btn{
+    background: map-get($colors, orange-color );
+    border-radius: 100px;
+    color: map-get($colors,white-color );
+    padding: 20px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    @media (min-width: $xl) {
+      &:hover{
+         border: 1px solid map-get($colors, orange-color );
+         background:map-get($colors,white-color );
+         color:  map-get($colors, orange-color );
+         svg{
+            path{
+               stroke: map-get($colors, orange-color );
+            }
+         }
+      }
+    }
+    @media (max-width: $xl) {
+        padding: 15px 24px;
+    }
+     @media (max-width: $large) {
+        padding: 12px 22px;
+        margin: 0 12px;
+     }
+     @media (max-width: $medium) {
+        padding: 9px 18px;
+        margin: 0 10px;
+     }
+     @media (max-width: $small) {
+        padding: 9px 15px;
+        margin: 0px 5px;
+     }
+}
+@mixin btn-font{
+   font-size: 16px;
+   line-height: 28px;
+}
+
+@mixin hover_btn{
+button{
+  @include common-btn;
+  font-weight: 400;
+  svg{
+     padding-left: 14px;
+     width: auto;
+     path{
+         stroke: map-get($colors,white-color);
+     }
+ }
+  }
+}
+$card2: 2;
+.cards_row{
+   .cards:nth-child(#{$card2}){
+        box-shadow: 0 5px 16px rgba(245, 222, 179,0.6);
+         border: none;
+         @include hover_btn;
+      
+   }
+}

@@ -1,0 +1,64 @@
+//mixin with interpolation
+@mixin logo{
+    .logo {
+        font-size: 24px;
+        line-height: 28px;
+        color: map-get($colors, grey-text);
+        span {
+          color: map-get($colors, orange-color);
+        }
+      }
+}
+@mixin gap($side, $value, $pro){
+    #{$pro}-#{$side}:$value + px;
+}
+@mixin margin-100{
+    margin: 100px 0;
+}
+@mixin ul-li-css{
+    ul{
+        padding: 0;
+       
+        li{
+            list-style-type: none;
+            padding: 0 26px;
+            
+        }
+        a{
+            text-decoration: none;
+            color: map-get($colors,grey-text );
+            font-weight: 600;
+            font-family: "Poppins-Regular";
+            font-size: 24px;
+            line-height: 38px;
+            &:hover{
+                color: map-get($colors,orange-color );
+            }
+        }
+        span{
+            display: block;
+            color: map-get($colors, mute-text );
+            font-family: "Poppins-Medium";
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+        }
+    }
+}
+
+@mixin for-cards{
+    .cards{
+        border: 1px solid lighten(map-get($colors, orange-color),40%) ;
+        border-radius: 50px;
+        padding: 30px;
+        margin: 0 20px;
+        width: 33.3%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@mixin font-16{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}

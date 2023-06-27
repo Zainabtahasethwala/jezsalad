@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Poppins-Black";
+    src: url(../fonts/Poppins-Black.ttf) format(ttf);
+}
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url(../fonts/Poppins-Bold.ttf)format(ttf);
+}
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url(../fonts/Poppins-Medium.ttf)format(ttf);
+}
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(../fonts/Poppins-Regular.ttf)format(ttf);
+}
+@font-face {
+    font-family: "Poppins-Light";
+    src: url(../fonts/Poppins-Light.ttf)format(ttf);
+}
+@font-face {
+    font-family: "Poppins-Black";
+    src: url(../fonts/Poppins-Black.ttf)format(woff);
+}
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url(../fonts/Poppins-Bold.woff)format(woff);
+}
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url(../fonts/Poppins-Medium.woff)format(woff);
+}
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(../fonts/Poppins-Regular.woff)format(woff);
+}
+@font-face {
+    font-family: "Poppins-Light";
+    src: url(../fonts/Poppins-Light.woff)format(woff);
+}
+@font-face {
+    font-family: "Roboto-Black";
+    src: url(../fonts/Roboto-Black.otf)format(otf);
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../fonts/Roboto-Bold.otf)format(otf);
+}
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/Roboto-Regular.otf)format(otf);
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../fonts/Roboto-Bold.ttf)format(ttf);
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../fonts/Roboto-Bold.woff)format(woff);
+}
+.logo{
+    font-style: normal;
+    font-weight: 900;
+    font-family: "Roboto-Bold";
+}
+h1{
+    font-family: 'Poppins-Bold';
+    font-style: normal;
+    font-weight: 700;
+}
+h3{
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: 600;
+}
+h4{
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: 600; 
+}
+p{
+    font-family: 'Poppins-Regular';
+    font-style: normal;
+    font-weight: 500;
+}
+h5{
+    font-family: "Poppins-Medium";
+    font-weight: 500;
+}
+button{
+    font-weight: 400;
+    font-family: "Poppins-Regular";
+    }
+    footer .footer-list ul span,.copyright{
+    font-weight: 400;
+    font-family: "Poppins-Regular";
+}

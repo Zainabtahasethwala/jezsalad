@@ -1,0 +1,11 @@
+//function for image
+$baseUrl:'../../images/';
+
+@function image($url){
+    @return url($baseUrl + $url);
+}
+.background-image-call-function{
+    background-image: image('');
+    height: auto;
+    width: auto;
+}

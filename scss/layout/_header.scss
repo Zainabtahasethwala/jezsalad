@@ -1,0 +1,127 @@
+@import"../utilites/variables.scss";
+@import"../components/_btnmixin.scss";
+@import"../utilites/mixins.scss";
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 46px 0;
+  align-items: center;
+  // .logo {
+  //   font-size: 24px;
+  //   line-height: 28px;
+  //   color: map-get($colors, grey-text);
+  //   span {
+  //     color: map-get($colors, orange-color);
+  //   }
+  // }
+  @include logo;
+  ul {
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+    li {
+      list-style-type: none;
+      a {
+        padding: 7px $nav-padding-right;
+        text-decoration: none;
+        //map-get use syntax
+        color: map-get($colors, grey-text);
+        text-transform: capitalize;
+        font-family: "Poppins-Medium";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: block;
+        // nesting hover in a
+        &:hover {
+          color: map-get($colors, orange-color);
+        }
+      }
+      a.active {
+        color: map-get($colors, orange-color);
+        font-weight: 700;
+        font-family: "Poppins-Bold";
+      }
+    }
+  }
+  .btn {
+    @include common-btn;
+  }
+  .menutoggle {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  nav {
+    .logo{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .menutoggle {
+      display: block;
+      z-index: 99;
+      a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        flex-direction: column;
+        justify-content: center;
+        color: map-get($colors, orange-color);
+        transform: translateY(4px);
+      }
+      span {
+        display: block;
+        background-color: map-get($colors, orange-color);
+        width: 25px;
+        height: 2px;
+        border-radius: 4px;
+        margin-bottom: 6px;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+  .opened {
+    .menutoggle {
+      span:first-child {
+        position: absolute;
+        transform: rotate(45deg);
+        background-color: map-get($colors,grey-text );
+      }
+      span:nth-child(2) {
+        display: none;
+      }
+      span:last-child {
+        position: absolute;
+        transform: rotate(-45deg);
+        background-color: map-get($colors,grey-text );
+      }
+    }
+  }
+  .menu_item {
+   position: fixed;
+   top: 0;
+   left: -200%;
+   height: 100%;
+   width: 100%;
+   background-color: lighten(map-get($colors, orange-color ),45%);
+   z-index: 99;
+   transition: all 0.3s ease;
+   &.menuopened{
+    left: 0;
+    transition: all 0.3s ease;
+   }
+   ul{
+    flex-direction: column;
+    padding: 60px 0;
+   }
+   a{
+    color: map-get($colors,grey-text );
+    &.active{
+        color: map-get($colors, grey-text);
+    }
+   }
+  }
+}
