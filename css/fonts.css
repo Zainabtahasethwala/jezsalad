@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: "Poppins-Black";
     src: url(../fonts/Poppins-Black.ttf) format(ttf);
@@ -79,7 +80,7 @@ h4{
     font-weight: 600; 
 }
 p{
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Medium';
     font-style: normal;
     font-weight: 500;
 }
@@ -87,11 +88,22 @@ h5{
     font-family: "Poppins-Medium";
     font-weight: 500;
 }
+h6{
+    font-weight: 600;
+    font-family: "poppins-Medium";
+}
+.best-hashtag{
+    font-family: "Poppins-Medium";
+}
+button.btn{
+    font-weight: 600;
+    font-family: "poppins-Medium";
+}
 button{
     font-weight: 400;
     font-family: "Poppins-Regular";
     }
-    footer .footer-list ul span,.copyright{
+    footer .footer-list ul span,.copyright,.card_body p,.section3_wrapper p,input,.follow-us{
     font-weight: 400;
     font-family: "Poppins-Regular";
 }

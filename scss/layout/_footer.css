@@ -3,27 +3,23 @@ footer {
   footer .col-3 {
     display: flex;
     justify-content: space-around; }
-  footer .footer-head {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    flex-direction: column; }
-    footer .footer-head .logo {
-      font-size: 24px;
-      line-height: 28px;
-      color: #575757; }
-      footer .footer-head .logo span {
-        color: #FB9300; }
-    footer .footer-head p {
-      font-size: 16px;
-      line-height: 25px;
-      font-weight: 400;
-      padding-top: 19px; }
-    footer .footer-head .copyright {
-      font-size: 16px;
-      line-height: 24px;
-      font-weight: 400;
-      color: #2B2B2B; }
+  footer .footer-head .logo {
+    font-size: 24px;
+    line-height: 28px;
+    color: #575757; }
+    footer .footer-head .logo span {
+      color: #FB9300; }
+  footer .footer-head p {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    padding-top: 19px; }
+  footer .footer-head .copyright {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #2B2B2B;
+    padding-top: 67px; }
   footer h6 {
     font-size: 16px;
     font-weight: 600;
@@ -35,7 +31,8 @@ footer {
     align-items: center;
     flex-direction: column; }
   footer .footer-list ul {
-    padding: 0; }
+    padding: 0;
+    margin-bottom: 0; }
     footer .footer-list ul li {
       list-style-type: none;
       padding: 0 26px; }
@@ -43,7 +40,7 @@ footer {
       text-decoration: none;
       color: #575757;
       font-weight: 600;
-      font-family: "Poppins-Regular";
+      font-family: "Poppins-Medium";
       font-size: 24px;
       line-height: 38px; }
       footer .footer-list ul a:hover {
@@ -67,11 +64,11 @@ footer {
         margin-bottom: 24px; }
       footer .footer-list ul li:hover svg path {
         fill: #575757; }
-      footer .footer-list ul li span {
+      footer .footer-list ul li span.ml-16 {
         color: #575757;
         margin-left: 16px;
         font-weight: 400; }
-        footer .footer-list ul li span:hover {
+        footer .footer-list ul li span.ml-16:hover {
           color: #FB9300; }
   footer .footer-list ul.pr-15 li {
     padding: 0 15px; }

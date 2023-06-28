@@ -4,7 +4,7 @@
 @import "mixinforP.scss";
 h1 {
   @include font-size($h1-font-sizes);
-  letter-spacing: 0.32px;
+  letter-spacing: -1.44px;
   color: map-get($colors, grey-text);
   @include gap(bottom, 30, margin);
   @include gap(top, 30, margin);
@@ -21,6 +21,7 @@ p {
   letter-spacing: -0.02em;
   color: map-get($colors, mute-text);
   margin-bottom: 0;
+  
 }
 h3 {
   font-size: 48px;
@@ -36,6 +37,7 @@ h4{
   line-height: 43px;
   color: map-get($colors, black-color);
   margin-bottom: 12px;
+  letter-spacing: -0.48px;
 }
 h5{
   color: map-get($colors, orange-color);

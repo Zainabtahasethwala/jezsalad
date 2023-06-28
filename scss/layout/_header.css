@@ -9,12 +9,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: none;
+    border: 1px solid transparent;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
     text-transform: capitalize;
     font-weight: 400; }
+    @media (min-width: 1199px) {
+      .cards_row .cards:nth-child(2) button:hover {
+        border: 1px solid #FB9300;
+        background: #fff;
+        color: #FB9300; }
+        .cards_row .cards:nth-child(2) button:hover svg path {
+          stroke: #FB9300; } }
     @media (max-width: 1199px) {
       .cards_row .cards:nth-child(2) button {
         padding: 15px 24px; } }
@@ -39,7 +46,7 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 46px 0;
+  padding: 30px 0 84px;
   align-items: center; }
   nav .logo {
     font-size: 24px;
@@ -78,11 +85,18 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: none;
+    border: 1px solid transparent;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
     text-transform: capitalize; }
+    @media (min-width: 1199px) {
+      nav .btn:hover {
+        border: 1px solid #FB9300;
+        background: #fff;
+        color: #FB9300; }
+        nav .btn:hover svg path {
+          stroke: #FB9300; } }
     @media (max-width: 1199px) {
       nav .btn {
         padding: 15px 24px; } }

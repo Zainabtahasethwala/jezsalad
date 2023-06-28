@@ -4,16 +4,8 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 46px 0;
+  padding: 30px 0 84px;
   align-items: center;
-  // .logo {
-  //   font-size: 24px;
-  //   line-height: 28px;
-  //   color: map-get($colors, grey-text);
-  //   span {
-  //     color: map-get($colors, orange-color);
-  //   }
-  // }
   @include logo;
   ul {
     display: flex;
