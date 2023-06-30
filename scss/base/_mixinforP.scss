@@ -4,7 +4,7 @@ $breakpoints: (
     xl: 1199px,
     large: 992px,
     medium:768px,
-    small: 480px,
+    small: 576px,
     null:480px,
 );
 $h1-font-sizes: (
@@ -25,7 +25,7 @@ $p-font-size: (
   null: 14px,
 );
 
-//case 1: mixin for Font size P
+// case 1: mixin for Font size P
 // @mixin font-size($fs-map) {
 //   @each $fs-breakpoint, $fs-font-size in $fs-map {
 //     @if $fs-breakpoint == null {
@@ -69,6 +69,7 @@ $p-font-size: (
         font-size: $fs-font-size;
     }
 }
+
 //lets create mixin for font size with line-height and breakpoints
 @mixin font-size($fs-map, $fs-breakpoints: $breakpoints){
     @each $fs-breakpoint, $fs-font-size in $fs-map{

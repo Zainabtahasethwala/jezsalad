@@ -1,5 +1,6 @@
 @import "../utilites/variables.scss";
 @import "../utilites/mixins.scss";
+@import "../loops/ifelse.scss";
 footer{
     padding: 50px 0;
     .col-3{
@@ -21,11 +22,12 @@ footer{
         }
     }
     h6{
-        font-size: 16px;
+        @include font-for-h6(16);
         font-weight: 600;
         line-height: 22px;
-        color: map-get($colors, orange-color );
+        // color: map-get($colors, orange-color );
         margin-bottom: 24px;
+        @include gap(right,30,padding);
     }
     .center-list{
         display: flex;

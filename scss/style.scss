@@ -10,6 +10,7 @@
 @import "./components/_btnmixin.scss";
 @import "layout/_header.scss";
 @import "layout/footer.scss";
+@import "./loops/ifelse.scss";
 .banner {
   .best-hashtag {
     background-color: lighten(map-get($colors, orange-color), 40%);
@@ -136,9 +137,9 @@
             left: 0;
             padding: 0 38px;
             h6 {
-            font-size: 24px;
+            @include font-for-h6(24);
             line-height: 31px;
-            color: map-get($colors, white-color);
+            // color: map-get($colors, white-color);
             }
             b {
             color: map-get($colors, white-color);

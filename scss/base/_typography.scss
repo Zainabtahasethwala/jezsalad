@@ -2,6 +2,7 @@
 @import "../utilites/variables.scss";
 @import "../utilites/mixins.scss";
 @import "mixinforP.scss";
+@import "../loops/ifelse.scss";
 h1 {
   @include font-size($h1-font-sizes);
   letter-spacing: -1.44px;
@@ -24,16 +25,15 @@ p {
   
 }
 h3 {
-  font-size: 48px;
+  font-size: get-font-size(h3);
   line-height: 67px;
   color: map-get($colors, grey-text);
-  margin-bottom: 30px;
   span {
     color: map-get($colors, orange-color);
   }
 }
 h4{
-  font-size: 24px;
+  font-size: get-font-size(h4);
   line-height: 43px;
   color: map-get($colors, black-color);
   margin-bottom: 12px;
@@ -41,7 +41,7 @@ h4{
 }
 h5{
   color: map-get($colors, orange-color);
-  font-size: 20px;
+  font-size: get-font-size(h5);
   line-height: 36px;
   margin-bottom: 12px;
 }

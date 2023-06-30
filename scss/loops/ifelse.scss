@@ -1,0 +1,33 @@
+@import "../utilites/variables.scss";
+//scss if else
+
+//case1 for h3 margin
+$value: low;
+h3{
+    @if $value == high{margin-bottom:30px;}
+    @else if $value == low{margin-bottom:20px;}
+    @else {margin: 10px;}
+}
+//case2 if else with mixin for h6
+@mixin font-for-h6($font-value){
+    font-size: $font-value + px;
+    @if $font-value >20{color: map-get($colors, white-color );}
+    @else if $font-value < 20{color: map-get($colors, orange-color );}
+    @else {color:map-get($colors,grey-text);}
+}
+//result will get from style & footer
+
+
+//case3 with function for h3, h4, h5
+@function get-font-size($htag){
+    @if $htag == h3{
+        @return  48px;
+    }
+    @else if $htag == h4{
+        @return 24px;
+    }
+    @else{
+        @return 20px;
+    }
+}
+//result will get from typograpghy
